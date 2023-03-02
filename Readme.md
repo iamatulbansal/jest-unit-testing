@@ -2,7 +2,8 @@
 
 
 <h2>Number Folder</h2>
- In this folder i was testing number  with using toBe or not.toBe Methods
+<p>In this folder i was testing number  with using toBe or not.toBe Methods</p>
+ 
 <!-- ===================================================================== -->
 <!-- sum.js code -> -->
 function sum(num1, num2) {
@@ -28,7 +29,7 @@ test("adds 6 + 2 to equal 8", () => {
 
 <!-- =========================================================================== -->
 <h2>object Folder</h2>
- In this folder i was test object whit using toEqual and toStrictEqual Methods
+ <p>In this folder i was test object whit using toEqual and toStrictEqual Methods</p>
 
  Pro Tip
  toEqual ignores object keys with undefined properties, undefined array items, array sparseness, or object type mismatch. To take these into account use toStrictEqual instead.

@@ -27,7 +27,6 @@ test("adds 6 + 2 to equal 8", () => {
     expect(sum(6 , 2)).toBe(8);
 })
 
-<!-- =========================================================================== -->
 <h2>object Folder</h2>
  <p>In this folder i was test object whit using toEqual and toStrictEqual Methods</p>
 
@@ -57,4 +56,27 @@ test("Object Deep Testing", () => {
   expect(obj()).toStrictEqual({ name: "Atul Bansal",age:undefined });
 });
 
+<h2>Strings</h2>
+<p>You can check strings against regular expressions with toMatch</p>
 <!-- =========================================================================== -->
+<!-- string.js -->
+function string(args) {
+    return args;
+}
+module.exports = string;
+
+<!-- string.test.js -->
+const string = require('./string');
+test('testing String', () => {
+    expect(string('Hello')).toMatch("Hello")
+})
+test('there is no I in team', () => {
+    expect('team').not.toMatch(/I/);
+});
+
+test('but there is a "stop" in Christoph', () => {
+    expect('Christoph').toMatch(/stop/);
+});
+
+<!-- =========================================================================== -->
+

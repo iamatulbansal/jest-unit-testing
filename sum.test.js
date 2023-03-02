@@ -1,7 +1,8 @@
 const sum = require('./sum')
 //Case 1
 test("adds 1 + 2 to equal 3", () => {
-    expect(sum(1 , 2)).toBe(3);
+    expect(sum(3 , 2)).not.toBe(5);
+     // So in this case whenever value is 5 then test cases failed
 })
 //Case 1
 test("adds 3 + 2 to equal 5", () => {

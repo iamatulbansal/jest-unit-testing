@@ -2,10 +2,7 @@
 
 # dependencies
 /node_modules
-/using-react-testing-library/node_modules
 /.pnp
-/using-react-testing-library/.pnp
-/using-react-testing-library/.pnp.js
 .pnp.js
 
 # testing
@@ -13,7 +10,6 @@
 
 # production
 /build
-/using-react-testing-library/build
 
 # misc
 .DS_Store

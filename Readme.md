@@ -1,7 +1,7 @@
 <h1>Jest Unit Tesing</h1>
 
 
-<h2>Number Folder</h2>
+<h2>Number</h2>
 <p>In this folder i was testing number  with using toBe or not.toBe Methods</p>
  
 <!-- ===================================================================== -->
@@ -27,7 +27,7 @@ test("adds 6 + 2 to equal 8", () => {
     expect(sum(6 , 2)).toBe(8);
 })
 
-<h2>object Folder</h2>
+<h2>object</h2>
  <p>In this folder i was test object whit using toEqual and toStrictEqual Methods</p>
 
  Pro Tip

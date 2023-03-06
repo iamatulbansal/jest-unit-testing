@@ -80,4 +80,24 @@ test('but there is a "stop" in Christoph', () => {
 
 <!-- =========================================================================== -->
 <h2>Callback</h2>
+
+<!-- Main file js -->
+function fetchData(back) {
+  return back("Hello");
+}
+module.exports = fetchData;
+<!-- test file -->
+const fetchData = require("./callbackFun");
+test("fetchData Using Callback", (done) => {
+  function callback(data) {
+    try {
+      expect(data).toBe("Hello");
+      done();
+    } catch (error) {
+      done(error);
+    }
+  }
+  fetchData(callback);
+});
+
 <h2>Promises</h2>

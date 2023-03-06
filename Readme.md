@@ -101,3 +101,18 @@ test("fetchData Using Callback", (done) => {
 });
 
 <h2>Promises</h2>
+<!-- main file js  for promises-->
+function fetchData() {
+    return new Promise((resolve, reject) => {
+        resolve("Hello");
+    });
+}
+module.exports = fetchData;
+<!-- Main file js for testing -->
+const fetchData = require("./promises");
+test("Testing using promises", () => {
+  return fetchData().then((data) => {
+    expect(data).toBe("Hello");
+  });
+});
+<!-- ================================================================ -->
